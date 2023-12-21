@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Design System</title>
+</head>
+
+<body>
+  <mc-header></mc-header>
+
+  <div id="layouts" class="mc-container mc-container--padding-inline">
+
+    <h1>Containers</h1>
+
+    <p>
+      The basic container has a class of <code>mc-container</code>,
+      which evaluates to the a max-width of <code>--width-content-area</code>.
+      It also has <code>margin-left</code> and <code>margin-right</code> set to auto, so it aligns in the
+      centre of the screen if the screen is wider than its max-width.
+    </p>
+    <p>
+      All other containers are modifiers of this one, which allows them to be wider or narrower.
+      Their widths are set by a corresponding modifier class such as <code>mc-container--small</code>
+      or <code>mc-container--xlarge</code> for example.
+    </p>
+    <p>
+      If you want to align your layout to the left or right - often needed to have, for example,
+      a text area aligned to the left that is only X space wide, you can add a class of
+      <code>mc-container--left</code> or <code>mc-container--right</code>.
+    </p>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container-demo">
+      <h2>Container: Default</h2>
+      <pre>
+        <code>
+        &lt;div class="mc-container"&gt;
+          HTML here
+        &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>A heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+      <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+    </div>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--small">
+      <h2>Container: Small</h2>
+      <pre>
+        <code>
+        &lt;div class="mc-container mc-container--small"&gt;
+          HTML here
+        &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>A heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+      <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+    </div>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--medium">
+      <h2>Container: Medium</h2>
+      <pre>
+        <code>
+        &lt;div class="mc-container mc-container--medium"&gt;
+          HTML here
+        &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>A heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+      <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+    </div>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--large">
+      <h2>Container: Large</h2>
+      <pre>
+        <code>
+        &lt;div class="mc-container mc-container--large"&gt;
+          HTML here
+        &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>A heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+      <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+    </div>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--xlarge">
+      <h2>Container: Extra Large</h2>
+      <pre>
+        <code>
+        &lt;div class="mc-container mc-container--xlarge"&gt;
+          HTML here
+        &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>A heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+      <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+    </div>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--100">
+      <h2>Container: 100% of it's container</h2>
+      <pre>
+        <code>
+        &lt;div class="mc-container mc-container--100"&gt;
+          HTML here
+        &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>A heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+      <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+    </div>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--left">
+      <h2>Container: Left</h2>
+      <pre>
+        <code>
+        &lt;div class="mc-container mc-container--full-screen"&gt;
+          HTML here
+        &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>A heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+      <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+    </div>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--right">
+      <h2>Container: Right</h2>
+      <pre>
+        <code>
+        &lt;div class="mc-container mc-container--full-screen"&gt;
+          HTML here
+        &lt;/div&gt;
+        </code>
+      </pre>
+      <h3>A heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+      <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
+    </div>
+
+  </div>
+
+  <mc-footer></mc-footer>
+  <script type="module" src="../script.js"></script>
+</body>
+
+</html>

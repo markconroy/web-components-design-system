@@ -1,0 +1,77 @@
+/* Base styles for our elements, handy for sensible defaults/fallbacks */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--mc-font-primary);
+  line-height: var(--mc-line-height);
+}
+
+a {
+  color: var(--mc-color-primary);
+  transition: var(--mc-transition-time);
+  &:focus-visible {
+    outline: var(--mc-border);
+    outline-offset: var(--mc-border-width);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mc-heading,
+.mc-heading-large,
+.mc-heading-larger,
+.mc-heading-largest {
+  font-family: var(--mc-font-secondary);
+  font-weight: bold;
+  line-height: var(--mc-line-height-small);
+}
+
+h4,
+.mc-heading {
+  font-size: var(--mc-font-size-responsive-heading);
+}
+h3,
+.mc-heading-large {
+  font-size: var(--mc-font-size-responsive-heading-large);
+}
+h2,
+.mc-heading-larger {
+  font-size: var(--mc-font-size-responsive-heading-larger);
+}
+h1,
+.mc-heading-largest {
+  font-size: var(--mc-font-size-responsive-heading-largest);
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  transition: var(--mc-transition-time);
+  &:focus-visible {
+    outline: var(--mc-border);
+    outline-offset: var(--mc-border-width);
+  }
+}
+
+button {
+  background-color: var(--mc-color-primary);
+  border: var(--mc-border);
+  padding: var(--mc-spacing-small) var(--mc-spacing);
+  color: var(--mc-color-white);
+}
+button:where(:focus, :hover) {
+  background-color: var(--mc-color-white);
+  color: var(--mc-color-primary);
+}

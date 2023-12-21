@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Web Components Design System</title>
+</head>
+
+<body>
+
+  <mc-header></mc-header>
+
+  <div class="mc-container mc-container--padding-inline">
+    <div class="mc-container mc-container--small mc-container--left">
+      <h1>Web Components Design System</h1>
+      <h2>Welcome</h2>
+      <p>Welcome to our <strong>Design System</strong>.</p>
+      <p>This design system was built with nothing but HTML, CSS, and JavaScript. There is no Node/NPM/Yarn/etc
+        involved.
+        There are no bundlers like Webpack or Vite. It doens't rely on a framework or design system kit such as
+        StoryBook.
+      </p>
+      <p>Whilst there's nothing wrong with using any of the above, native web APIs are now so powerful there a huge
+        amount
+        we can build without their use.</p>
+      <p>Why not use a tooling system? Simply, without one, there is so much less to maintain, and nothing to keep
+        updated.</p>
+    </div>
+    <h2>General Approach</h2>
+    <p>The general approach to this is:</p>
+    <ul>
+      <li>Create design tokens using CSS variables (custom properties)</li>
+      <li>Create some easy to use, memorable CSS utility classes for containers and grids</li>
+      <li>Create Web Components for anything that is re-usable - header, footer, cards, etc.</li>
+      <li>Retire to the sun!</li>
+    </ul>
+
+  </div>
+
+  <mc-footer></mc-footer>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Design System</title>
+</head>
+
+<body>
+  <mc-header></mc-header>
+
+  <div id="layouts" class="mc-container mc-container--padding-inline">
+
+    <div class="mc-container mc-container--small mc-container--left">
+      <h1>Typography</h1>
+      <p>Table of Contents</p>
+      <ul>
+        <li><a href="#font-families">Font Families</a></li>
+        <li><a href="#font-sizes">Font Sizes</a></li>
+        <li><a href="#line-heights">Line Heights</a></li>
+      </ul>
+      <hr>
+      <p>
+        All of our fonts are responsive. They go from a minimum size on small screens to a maximum size
+        on large screens. In between these screen sizes they grow or shrink until they reach one
+        of these extremes.
+      </p>
+      <p>
+        We do not set font sizes necessarily by elements. For example, not all <code>&lt;h2&gt;</code>
+        elements are the same size: a <code>&lt;h2&gt;</code> used in a title for search results
+        may be a different size to a <code>&lt;h2&gt;</code> used as a title for a menu in the
+        footer. Instead, we create variables for all the combinations of font sizes that are in
+        the design, and apply these where needed.
+      </p>
+      <p>
+        This approach means we can have as many font sizes as we need, and can apply
+        them where they are needed. So ... we can use <code>&lt;h2&gt;</code> where it
+        is needed semantically, but another class for the visual style of it.
+      </p>
+    </div>
+
+    <div class="mc-ds-container mc-container mc-container--small mc-container--left">
+      <h2 id="font-families">Font Families</h2>
+      <h3 style="font-family: var(--mc-font-primary)">Font Family:  Primary</h3>
+      <p style="font-family: var(--mc-font-primary)">
+        This paragraph is using the <strong>Primary Font</strong>. Our primary font is <strong>Roboto</strong> with some fall backs for other <strong>sans-serif</strong> fonts. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis vel maxime obcaecati mollitia deserunt at expedita adipisci eum enim dicta suscipit voluptatem, placeat perferendis doloribus totam nobis exercitationem quas!
+      </p>
+      <h3 style="font-family: var(--mc-font-secondary)">Font Family: Secondary</h3>
+      <p style="font-family: var(--mc-font-secondary)">
+        This paragraph is using the <strong>Secondary Font</strong>. Our secondary font is <strong>Fira sans</strong> with some fall backs for other <strong>monospaced</strong> fonts. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis vel maxime obcaecati mollitia deserunt at expedita adipisci eum enim dicta suscipit voluptatem, placeat perferendis doloribus totam nobis exercitationem quas!
+      </p>
+    </div>
+
+    <div class="mc-ds-container mc-container mc-container--small mc-container--left">
+      <h2 id="font-sizes">Font sizes</h2>
+      <div class="mc-ds-font-container">
+        <h1>This is a h1</h1>
+        <p class="mc-heading-largest">This is a heading-largest</p>
+        <p>Above me is a standard h1 element. It is the same size as the "Heading largest" below it, which is actually just a standard paragraph element.</p>
+      </div>
+      <div class="mc-ds-font-container">
+        <h2>This is a h2</h2>
+        <p class="mc-heading-larger">This is a heading-larger</p>
+        <p>Above me is a standard h2 element. It is the same size as the "Heading larger" below it, which is actually just a standard paragraph element.</p>
+      </div>
+      <div class="mc-ds-font-container">
+        <h3>This is a h3</h3>
+        <p class="mc-heading-large">This is a heading-large</p>
+        <p>Above me is a standard h3 element. It is the same size as the "Heading large" below it, which is actually just a standard paragraph element.</p>
+      </div>
+      <div class="mc-ds-font-container">
+        <h4>This is a h4</h4>
+        <p class="mc-heading">This is a heading</p>
+        <p>Above me is a standard h4 element. It is the same size as the "Heading" below it, which is actually just a standard paragraph element.</p>
+      </div>
+      <div class="mc-ds-font-container">
+        <h5>This is a h5</h5>
+        <h6>This is a h6</h6>
+      <div class="mc-ds-font-container">
+        <p>This is a paragraph of text, using the default font size.</p>
+      </div>
+    </div>
+
+    <div class="mc-ds-container mc-container mc-container--small mc-container--left">
+      <h2 id="line-heights">Line Heights</h2>
+      <h3>Default:  1.5</h3>
+      <p style="line-height: var(--mc-line-height)">
+        This paragraph is using the <strong>default (1.5)</strong> line-height. It is used for everything except headings. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis vel maxime obcaecati mollitia deserunt at expedita adipisci eum enim dicta suscipit voluptatem, placeat perferendis doloribus totam nobis exercitationem quas!
+      </p>
+      <h3>Small:  1.1</h3>
+      <p style="line-height: var(--mc-line-height-small)">
+        This paragraph is using the <strong>small (1.1)</strong> line-height. It is used for headings. Since their font size is usually quite large, they can handle less space between lines. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis vel maxime obcaecati mollitia deserunt at expedita adipisci eum enim dicta suscipit voluptatem, placeat perferendis doloribus totam nobis exercitationem quas!
+      </p>
+    </div>
+
+  </div>
+</div>
+<mc-footer></mc-footer>
+<script type="module" src="../script.js"></script>
+</body>
+
+</html>

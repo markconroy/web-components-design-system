@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Design System</title>
+</head>
+<body>
+  <mc-header></mc-header>
+
+  <div id="colours">
+    <div class="mc-container mc-container--padding-inline mc-ds-container">
+      <h1>Colors</h1>
+    </div>
+    <div class="mc-container mc-container--padding-inline mc-ds-container">
+      <h2>Brand Colors</h2>
+      <div class="mc-grid mc-grid--quarters">
+        <div>
+          <h3>Primary</h3>
+          <p><code>--mc-color-primary</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-primary);"></div>
+        </div>
+        <div class="mc-grid-item--one-quarter">
+          <h3>Secondary</h3>
+          <p><code>--mc-color-secondary</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-secondary);"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mc-container mc-container--padding-inline mc-ds-container">
+      <h2>Neutral Colors</h2>
+      <div class="mc-grid mc-grid--quarters">
+        <div>
+          <h3>White<br><span style="visibility: hidden;" aria-hidden="true">A new line!!!</span></h3>
+          <p><code>--mc-color-white</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-white);"></div>
+        </div>
+        <div>
+          <h3>Grey<br>(lightest)</h3>
+          <p><code>--mc-color-grey-lightest</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-grey-lightest);"></div>
+        </div>
+        <div>
+          <h3>Grey<br>(lighter)</h3>
+          <p><code>--mc-color-grey-lighter</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-grey-lighter);"></div>
+        </div>
+        <div>
+          <h3>Grey<br>(light)</h3>
+          <p><code>--mc-color-grey-light</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-grey-light);"></div>
+        </div>
+        <div>
+          <h3>Grey<span style="visibility: hidden;" aria-hidden="true">A new line!!!</span></h3>
+          <p><code>--mc-color-grey</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-grey);"></div>
+        </div>
+        <div>
+          <h3>Grey<br>(dark)</h3>
+          <p><code>--mc-color-grey-dark</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-grey-dark);"></div>
+        </div>
+        <div>
+          <h3>Grey<br>(darker)</h3>
+          <p><code>--mc-color-grey-darker</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-grey-darker);"></div>
+        </div>
+        <div>
+          <h3>Grey<br>(darkest)</h3>
+          <p><code>--mc-color-grey-darkest</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-grey-darkest);"></div>
+        </div>
+        <div>
+          <h3>Black<span style="visibility: hidden;" aria-hidden="true">A new line!!!</span></h3>
+          <p><code>--mc-color-black</code></p>
+          <div class="mc-ds-tile" style="background-color: var(--mc-color-black);"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <mc-footer></mc-footer>
+  <script type="module" src="../script.js"></script>
+</body>
+</html>

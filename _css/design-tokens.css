@@ -1,0 +1,78 @@
+:root {
+
+  /* Brand Colours */
+  --mc-color-primary: hsl(220, 70%, 60%);
+  --mc-color-secondary: hsl(23, 90%, 55%);
+  /* Grey Scale */
+  --mc-color-white: #fff;
+  --mc-color-grey-lightest: hsl(0, 0%, 95%);
+  --mc-color-grey-lighter: hsl(0, 0%, 80%);
+  --mc-color-grey-light: hsl(0, 0%, 65%);
+  --mc-color-grey: hsl(0, 0%, 50%);
+  --mc-color-grey-dark: hsl(0, 0%, 35%);
+  --mc-color-grey-darker: hsl(0, 0%, 20%);
+  --mc-color-grey-darkest: hsl(0, 0%, 5%);
+  --mc-color-black: #000;
+
+  /* Fonts */
+  --mc-font-primary: roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --mc-font-secondary: inconsolata,fira mono,ui-monospace,sf mono,monaco,droid sans mono,source code pro,monospace;
+
+  /* Font Sizes */
+  /* Static Font Sizes */
+  --mc-base-font-size: 16px;
+  --mc-font-size-smallest: calc(var(--mc-base-font-size) * .5);
+  --mc-font-size-smaller: calc(var(--mc-base-font-size) * .66);
+  --mc-font-size-small: calc(var(--mc-base-font-size) * .75);
+  --mc-font-size-medium: calc(var(--mc-base-font-size) * 1);
+  --mc-font-size-large: calc(var(--mc-base-font-size) * 1.5);
+  --mc-font-size-larger: calc(var(--mc-base-font-size) * 2);
+  --mc-font-size-largest: calc(var(--mc-base-font-size) * 2.5);
+  --mc-font-size-mega: calc(var(--mc-base-font-size) * 4);
+
+  /* Responsive Font Sizes */
+  /* These sizes use the variables from the static sizes */
+  --mc-font-size-responsive-heading: clamp(var(--mc-font-size-medium), 0.780rem + 0.976vw, var(--mc-font-size-large));
+  --mc-font-size-responsive-heading-large: clamp(var(--mc-font-size-large), 1.280rem + 0.976vw, var(--mc-font-size-largest));
+  --mc-font-size-responsive-heading-larger: clamp(var(--mc-font-size-larger), 1.780rem + 0.976vw, var(--mc-font-size-largest));
+  --mc-font-size-responsive-heading-largest: clamp(var(--mc-font-size-largest), 1.841rem + 2.927vw, var(--mc-font-size-mega));
+
+  /* Line Heights */
+  --mc-line-height: 1.5;
+  --mc-line-height-small: 1.1;
+
+  /* Spacing Items */
+  --mc-spacing: 1rem;
+  --mc-spacing-smallest: calc(var(--mc-spacing) * .25);
+  --mc-spacing-smaller: calc(var(--mc-spacing) * .5);
+  --mc-spacing-small: calc(var(--mc-spacing) * .75);
+  --mc-spacing-medium: var(--mc-spacing);
+  --mc-spacing-large: calc(var(--mc-spacing) * 1.5);
+  --mc-spacing-larger: calc(var(--mc-spacing) * 2);
+  --mc-spacing-largest: calc(var(--mc-spacing) * 2.5);
+
+  /* Widths */
+  --mc-width-small: 48em; /* 768px */
+  --mc-width-medium: 60em; /* 960px */
+  --mc-width-large: 73.75em; /* 1180px */
+  --mc-width-xl: 90em; /* 1440px */
+  --mc-width-100: 100%;
+  --mc-width-content-area: var(--mc-width-large);
+
+  /* Borders */
+  --mc-border-style: solid;
+  --mc-border-width: 2px;
+  --mc-border-color: var(--mc-color-grey-dark);
+  --mc-border-radius: 5px;
+  --mc-border: var(--mc-border-width) var(--mc-border-style) var(--mc-border-color);
+
+  /* Animation */
+  --mc-transition-time: 0.3s;
+
+  /* Grids */
+  --mc-grid-columns: 12;
+  --mc-grid-gap: var(--mc-spacing);
+  --mc-grid-gap-none: 0;
+  --mc-grid-gap-small: var(--mc-spacing-small);
+  --mc-grid-gap-large: var(--mc-spacing-large);
+}
