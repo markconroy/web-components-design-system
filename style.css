@@ -1,8 +1,8 @@
 /* Import CSS needed for our websites and apps */
-@import url("./_css/design-tokens.css");
-@import url("./_css/containers.css");
-@import url("./_css/grid-system.css");
-@import url("./_css/base.css");
+@import url("_css/design-tokens.css");
+@import url("_css/containers.css");
+@import url("_css/grid-system.css");
+@import url("_css/base.css");
 
 /*
   This file imports CSS that is only needed to support the design system.
@@ -11,4 +11,4 @@
   It includes CSS for classes we build for laying out things like our colors
   containers, and fonts.
 */
-@import url("./design-system.css");
+@import url("design-system.css");
