@@ -12,11 +12,11 @@
 <body>
   <mc-header></mc-header>
 
-  <div id="layouts" class="mc-container mc-container--padding-inline">
+  <mc-container id="layouts" padding="inline">
 
-    <div class="mc-container mc-container--small mc-container--left">
+    <mc-container size="small" alignment="start">
       <h1>Typography</h1>
-      <p>Table of Contents</p>
+      <h2>Table of Contents</h2>
       <ul>
         <li><a href="#font-families">Font Families</a></li>
         <li><a href="#font-sizes">Font Sizes</a></li>
@@ -40,9 +40,9 @@
         them where they are needed. So ... we can use <code>&lt;h2&gt;</code> where it
         is needed semantically, but another class for the visual style of it.
       </p>
-    </div>
+    </mc-container>
 
-    <div class="mc-ds-container mc-container mc-container--small mc-container--left">
+    <mc-container size="small" alignment="start" class="mc-ds-container">
       <h2 id="font-families">Font Families</h2>
       <h3 style="font-family: var(--mc-font-primary)">Font Family:  Primary</h3>
       <p style="font-family: var(--mc-font-primary)">
@@ -52,9 +52,9 @@
       <p style="font-family: var(--mc-font-secondary)">
         This paragraph is using the <strong>Secondary Font</strong>. Our secondary font is <strong>Fira sans</strong> with some fall backs for other <strong>monospaced</strong> fonts. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis vel maxime obcaecati mollitia deserunt at expedita adipisci eum enim dicta suscipit voluptatem, placeat perferendis doloribus totam nobis exercitationem quas!
       </p>
-    </div>
+    </mc-container>
 
-    <div class="mc-ds-container mc-container mc-container--small mc-container--left">
+    <mc-container size="small" alignment="start" class="mc-ds-container">
       <h2 id="font-sizes">Font sizes</h2>
       <div class="mc-ds-font-container">
         <h1>This is a h1</h1>
@@ -76,15 +76,15 @@
         <p class="mc-heading">This is a heading</p>
         <p>Above me is a standard h4 element. It is the same size as the "Heading" below it, which is actually just a standard paragraph element.</p>
       </div>
-      <div class="mc-ds-font-container">
+      <mc-container class="mc-ds-font-container">
         <h5>This is a h5</h5>
         <h6>This is a h6</h6>
       <div class="mc-ds-font-container">
         <p>This is a paragraph of text, using the default font size.</p>
       </div>
-    </div>
+    </mc-container>
 
-    <div class="mc-ds-container mc-container mc-container--small mc-container--left">
+    <mc-container size="small" alignment="start" class="mc-ds-container">
       <h2 id="line-heights">Line Heights</h2>
       <h3>Default:  1.5</h3>
       <p style="line-height: var(--mc-line-height)">
@@ -94,10 +94,10 @@
       <p style="line-height: var(--mc-line-height-small)">
         This paragraph is using the <strong>small (1.1)</strong> line-height. It is used for headings. Since their font size is usually quite large, they can handle less space between lines. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio reiciendis vel maxime obcaecati mollitia deserunt at expedita adipisci eum enim dicta suscipit voluptatem, placeat perferendis doloribus totam nobis exercitationem quas!
       </p>
-    </div>
+    </mc-container>
 
-  </div>
-</div>
+  </mc-container>
+
 <mc-footer></mc-footer>
 <script type="module" src="../script.js"></script>
 </body>
