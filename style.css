@@ -1,6 +1,5 @@
 /* Import CSS needed for our websites and apps */
 @import url("src/css/design-tokens.css");
-@import url("src/css/grid-system.css");
 @import url("src/css/base.css");
 
 /*

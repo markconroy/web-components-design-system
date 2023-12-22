@@ -75,3 +75,21 @@ button:where(:focus, :hover) {
   background-color: var(--mc-color-white);
   color: var(--mc-color-primary);
 }
+
+code {
+  --mc-code-color: var(--mc-color-white);
+  --mc-code-background-color: var(--mc-color-secondary);
+  --mc-code-font: var(--mc-font-secondary);
+  display: inline-block;
+  margin-bottom: 2px;
+  padding: var(--mc-spacing-smallest);
+  font-family: var(--mc-code-font);
+  background-color: var(--mc-code-background-color);
+  color: var(--mc-code-color);
+}
+
+pre code {
+  --mc-code-color: var(--mc-color-primary);
+  --mc-code-background-color: transparent;
+}
+
