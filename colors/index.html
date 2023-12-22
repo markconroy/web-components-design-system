@@ -10,12 +10,20 @@
 <body>
   <mc-header></mc-header>
 
-  <div id="colours">
-    <mc-container padding="inline" class="mc-ds-container">
+  <mc-container padding="inline" id="colours">
+    <div class="mc-ds-container">
       <h1>Colors</h1>
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#brand">Brand Colors</a></li>
+        <li><a href="#neutral">Neutral Colors</a></li>
+      </ul>
+      <p>Our colours are made up of two types: brand and neutral.</p>
+      <p>Brand colours are used for things like buttons, links, and other elements that need to stand out.</p>
+      <p>Neutral colours are used for things like text, backgrounds, and other elements that need to be less prominent.</p>
     </div>
-    <mc-container padding="inline" class="mc-ds-container">
-      <h2>Brand Colors</h2>
+    <div class="mc-ds-container">
+      <h2 id="brand">Brand Colors</h2>
       <div class="mc-grid mc-grid--quarters">
         <div>
           <h3>Primary</h3>
@@ -30,8 +38,8 @@
       </div>
     </div>
 
-    <mc-container padding="inline" class="mc-ds-container">
-      <h2>Neutral Colors</h2>
+    <div class="mc-ds-container">
+      <h2 id="neutral">Neutral Colors</h2>
       <div class="mc-grid mc-grid--quarters">
         <div>
           <h3>White<br><span style="visibility: hidden;" aria-hidden="true">A new line!!!</span></h3>
@@ -80,7 +88,9 @@
         </div>
       </div>
     </div>
-  </div>
+
+  </mc-container>
+
   <mc-footer></mc-footer>
   <script type="module" src="../script.js"></script>
 </body>
