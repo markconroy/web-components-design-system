@@ -10,23 +10,24 @@ export class Container extends HTMLElement {
         @import url('../style.css');
         :host {
           display: block;
+          width: 100%;
           max-width: var(--mc-width-content-area);
           margin-inline: auto;
         }
         :host([size="small"]) {
-          width: var(--mc-width-small);
+          max-width: var(--mc-width-small);
         }
         :host([size="medium"]) {
-          width: var(--mc-width-medium);
+          max-width: var(--mc-width-medium);
         }
         :host([size="large"]) {
-          width: var(--mc-width-large);
+          max-width: var(--mc-width-large);
         }
         :host([size="xlarge"]) {
-          width: var(--mc-width-xlarge);
+          max-width: var(--mc-width-xl);
         }
         :host([size="100"]) {
-          width: var(--mc-width-100);
+          max-width: none;
         }
         :host([alignment="start"]),
         :host([alignment="left"]) {
