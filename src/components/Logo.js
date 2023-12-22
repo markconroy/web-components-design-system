@@ -15,9 +15,14 @@ export class Logo extends HTMLElement {
           justify-content: center;
           padding: var(--mc-spacing);
           background-color: var(--mc-color-secondary);
+          border: var(--mc-border);
+          border-color: var(--mc-color-white);
           color: var(--mc-color-white);
           font-family: var(--mc-font-secondary);
           text-decoration: none;
+        }
+        .mc-logo a:hover {
+          background-color: var(--mc-color-primary);
         }
         hr {
           border: none;
