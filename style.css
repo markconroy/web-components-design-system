@@ -1,8 +1,8 @@
 /* Import CSS needed for our websites and apps */
-@import url("design-system/css/design-tokens.css");
-@import url("design-system/css/containers.css");
-@import url("design-system/css/grid-system.css");
-@import url("design-system/css/base.css");
+@import url("src/css/design-tokens.css");
+@import url("src/css/containers.css");
+@import url("src/css/grid-system.css");
+@import url("src/css/base.css");
 
 /*
   This file imports CSS that is only needed to support the design system.

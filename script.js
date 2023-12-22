@@ -1,2 +1,2 @@
-import { Header } from './design-system/components/Header.js';
-import { Footer } from './design-system/components/Footer.js';
+import { Header } from './src/components/Header.js';
+import { Footer } from './src/components/Footer.js';
