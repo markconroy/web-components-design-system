@@ -1,4 +1,5 @@
 import { Logo } from './Logo.js';
+import { Container } from './Container.js';
 
 export class Footer extends HTMLElement {
   static {
@@ -35,20 +36,20 @@ export class Footer extends HTMLElement {
         .mc-footer__menu a:hover {
           text-decoration: underline;
         }
-        .mc-footer__legal {
+        .mc-footer__credits {
           display: flex;
           justify-content: center;
           background: var(--mc-color-white);
           padding-inline: var(--mc-spacing);
           margin-block-start: var(--mc-spacing);
         }
-        .mc-footer__legal a {
+        .mc-footer__credits a {
           color: var(--mc-color-primary);
           text-decoration: none;
         }
       </style>
       <footer class="mc-footer">
-        <div class="mc-container mc-container--padding-inline">
+        <mc-container padding="inline" size="100">
           <div class="mc-footer__inner">
             <div class="mc-footer__logo">
               <mc-logo></mc-logo>
@@ -91,11 +92,11 @@ export class Footer extends HTMLElement {
                 </div>
               </div>
             </nav>
-            <div class="mc-footer__legal">
+            <div class="mc-footer__credits">
               <p>Created by <a href="https://mark.ie">Mark Conroy</a> | Code available on <a href="https://github.com/markconroy/web-components-design-system">GitHub</a></p>
             </div>
           </div>
-        </div>
+        </mc-container>
       </footer>
     `;
   }

@@ -12,148 +12,182 @@
 <body>
   <mc-header></mc-header>
 
-  <div id="layouts" class="mc-container mc-container--padding-inline">
+  <mc-container id="layouts" padding="inline">
 
     <h1>Containers</h1>
 
+    <h2>Table of contents</h2>
+
+    <ul>
+      <li><a href="#default">Default</a></li>
+      <li><a href="#small">Small</a></li>
+      <li><a href="#medium">Medium</a></li>
+      <li><a href="#large">Large</a></li>
+      <li><a href="#xlarge">Extra Large</a></li>
+      <li><a href="#100">100% of it's container</a></li>
+      <li><a href="#start">Start</a></li>
+      <li><a href="#end">End</a></li>
+    </ul>
+
     <p>
-      The basic container has a class of <code>mc-container</code>,
-      which evaluates to the a max-width of <code>--width-content-area</code>.
+      The basic container is a custom element called <code>mc-container</code>,
+      which evaluates to the a max-width of <code>--mc-width-content-area</code>.
       It also has <code>margin-left</code> and <code>margin-right</code> set to auto, so it aligns in the
       centre of the screen if the screen is wider than its max-width.
     </p>
     <p>
-      All other containers are modifiers of this one, which allows them to be wider or narrower.
-      Their widths are set by a corresponding modifier class such as <code>mc-container--small</code>
-      or <code>mc-container--xlarge</code> for example.
+      It accepts props for <code>padding</code>, <code>size</code> and <code>alignment</code>, with the following allowed values:
     </p>
-    <p>
-      If you want to align your layout to the left or right - often needed to have, for example,
-      a text area aligned to the left that is only X space wide, you can add a class of
-      <code>mc-container--left</code> or <code>mc-container--right</code>.
-    </p>
+    <ul>
+      <li>Padding:
+        <ul>
+          <li><code>inline</code> - inline-padding is set to <code>--mc-spacing</code></li>
+          <li><code>block</code> - block-padding is set to <code>--mc-spacing</code></li>
+          <li><code>all</code> - padding is set to <code>--mc-spacing</code></li>
+        </ul>
+      </li>
+      <li>Size:
+        <ul>
+          <li><code>small</code> - max-width is set to <code>--mc-width-small</code></li>
+          <li><code>medium</code> - max-width is set to <code>--mc-width-medium</code></li>
+          <li><code>large</code> - max-width is set to <code>--mc-width-large</code></li>
+          <li><code>xlarge</code> - max-width is set to <code>--mc-width-xlarge</code></li>
+          <li><code>100</code> - max-width is set to <code>100%</code></li>
+        </ul>
+      </li>
+      <li>Alignment:
+        <ul>
+          <li><code>start</code> - aligns the container to the inline-block-start</li>
+          <li><code>end</code> - aligns the container to the inline-block-end</li>
+        </ul>
+      </li>
+    </ul>
 
-    <div class="mc-container mc-container--padding-inline mc-ds-container-demo">
+    <mc-container id="default" padding="inline" class="mc-ds-container-demo">
       <h2>Container: Default</h2>
       <pre>
         <code>
-        &lt;div class="mc-container"&gt;
+        &lt;mc-container&gt;
           HTML here
-        &lt;/div&gt;
+        &lt;/mc-container&gt;
         </code>
       </pre>
       <h3>A heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
       <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
-    </div>
+    </mc-container>
 
-    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--small">
+    <mc-container id="small" padding="inline" size="small" class="mc-ds-container-demo">
       <h2>Container: Small</h2>
       <pre>
         <code>
-        &lt;div class="mc-container mc-container--small"&gt;
+        &lt;mc-container size="small"&gt;
           HTML here
-        &lt;/div&gt;
+        &lt;/mc-container&gt;
         </code>
       </pre>
       <h3>A heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
       <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
-    </div>
+    </mc-container>
 
-    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--medium">
+    <mc-container id="medium" padding="inline" size="medium" class="mc-ds-container-demo">
       <h2>Container: Medium</h2>
       <pre>
         <code>
-        &lt;div class="mc-container mc-container--medium"&gt;
+        &lt;mc-container size="medium"&gt;
           HTML here
-        &lt;/div&gt;
+        &lt;/mc-container&gt;
         </code>
       </pre>
       <h3>A heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
       <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
-    </div>
+    </mc-container>
 
-    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--large">
+    <mc-container id="large" padding="inline" size="large" class="mc-ds-container-demo">
       <h2>Container: Large</h2>
       <pre>
         <code>
-        &lt;div class="mc-container mc-container--large"&gt;
+        &lt;mc-container size="large"&gt;
           HTML here
-        &lt;/div&gt;
+        &lt;/mc-container&gt;
         </code>
       </pre>
       <h3>A heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
       <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
-    </div>
+    </mc-container>
 
-    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--xlarge">
+    <mc-container id="xlarge" padding="inline" size="xlarge" class="mc-ds-container-demo">
       <h2>Container: Extra Large</h2>
       <pre>
         <code>
-        &lt;div class="mc-container mc-container--xlarge"&gt;
+        &lt;mc-container size="xlarge"&gt;
           HTML here
-        &lt;/div&gt;
+        &lt;/mc-container&gt;
         </code>
       </pre>
       <h3>A heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
       <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
-    </div>
+    </mc-container>
 
-    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--100">
+    <mc-container id="100" padding="inline" size="100" class="mc-ds-container-demo">
       <h2>Container: 100% of it's container</h2>
       <pre>
         <code>
-        &lt;div class="mc-container mc-container--100"&gt;
+        &lt;mc-container size="100"&gt;
           HTML here
-        &lt;/div&gt;
+        &lt;/mc-container&gt;
         </code>
       </pre>
       <h3>A heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
       <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
-    </div>
+    </mc-container>
 
-    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--left">
-      <h2>Container: Left</h2>
+    <mc-container id="start" padding="inline" alignment="start" size="small" class="mc-ds-container-demo">
+      <h2>Container: Start</h2>
+      <p>You can use <code>start</code> or <code>left</code> for this value. The preference is to use <code>start</code>.</p>
       <pre>
         <code>
-        &lt;div class="mc-container mc-container--full-screen"&gt;
+        &lt;mc-container size="small" alignment="start"&gt;
           HTML here
-        &lt;/div&gt;
+        &lt;/mc-container&gt;
         </code>
       </pre>
       <h3>A heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
       <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
-    </div>
+    </mc-container>
 
-    <div class="mc-container mc-container--padding-inline mc-ds-container-demo mc-container--right">
-      <h2>Container: Right</h2>
+
+
+    <mc-container id="end" padding="inline" alignment="end" size="small" class="mc-ds-container-demo">
+      <h2>Container: End</h2>
+      <p>You can use <code>end</code> or <code>right</code> for this value. The preference is to use <code>end</code>.</p>
       <pre>
         <code>
-        &lt;div class="mc-container mc-container--full-screen"&gt;
+        &lt;mc-container size="small" alignment="end"&gt;
           HTML here
-        &lt;/div&gt;
+        &lt;/mc-container&gt;
         </code>
       </pre>
       <h3>A heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
       <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit delectus nisi nobis ad tenetur dignissimos? Praesentium quia beatae cupiditate consectetur, dolores quibusdam eum fuga cum tenetur optio, natus nesciunt consequatur?</p>
-    </div>
+    </mc-container>
 
-  </div>
+  </mc-container>
 
   <mc-footer></mc-footer>
   <script type="module" src="../script.js"></script>

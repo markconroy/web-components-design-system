@@ -1,5 +1,6 @@
 import { Logo } from './Logo.js';
 import { MainNav } from './MainNav.js';
+import { Container } from './Container.js';
 
 export class Header extends HTMLElement {
   static {
@@ -30,7 +31,7 @@ export class Header extends HTMLElement {
       }
       </style>
       <header class="mc-header">
-        <div class="mc-container mc-container--padding-inline">
+        <mc-container padding="inline">
           <div class="mc-header__inner">
             <div class="mc-header__logo">
               <mc-logo></mc-logo>
@@ -39,7 +40,7 @@ export class Header extends HTMLElement {
               <mc-main-nav></mc-main-nav>
             </nav>
           </div>
-        </div>
+        </mc-container>
       </header>
     `;
   }
