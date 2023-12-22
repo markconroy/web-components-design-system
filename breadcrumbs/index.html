@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <title>Design System</title>
+</head>
+
+<body>
+  <mc-header></mc-header>
+  <mc-breadcrumbs>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Breadcrumbs</a></li>
+    </ul>
+  </mc-breadcrumbs>
+
+  <mc-container padding="inline">
+
+    <mc-container size="small" alignment="start">
+      <h1>Breadcrumbs</h1>
+      <p>The breadcrumbs component is available to be used on all pages of our sites/apps.</p>
+    </mc-container>
+
+    <mc-container size="large" class="mc-ds-container-demo">
+      <mc-breadcrumbs>
+        <ul name="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Subcategory</a></li>
+          <li><a href="#">Product</a></li>
+        </ul>
+      </mc-breadcrumbs>
+    </mc-container>
+
+  </mc-container>
+
+  <mc-footer></mc-footer>
+  <script type="module" src="../script.js"></script>
+</body>
+
+</html>

@@ -47,17 +47,33 @@ export class MainNav extends HTMLElement {
         .mc-main-nav-dialog__close {
           margin-left: auto;
         }
+        .mc-main-nav-dialog__nav > ul > li + li {
+          margin-top: var(--mc-spacing-largest);
+          padding-top: var(--mc-spacing-largest);
+          border-top: var(--mc-border);
+        }
       </style>
       <div class="mc-main-nav-dialog__close">
         <button class="mc-main-nav-dialog__close-button">Close</button>
       </div>
       <nav class="mc-main-nav-dialog__nav">
         <ul>
-          <li><a href="/colors">Colors</a></li>
-          <li><a href="/typography">Typography</a></li>
-          <li><a href="/containers">Containers</a></li>
-          <li><a href="/grids">Grid system</a></li>
-        </ul>
+          <li>Utility Components
+          <ul>
+            <li><a href="/colors">Colors</a></li>
+            <li><a href="/typography">Typography</a></li>
+            <li><a href="/containers">Containers</a></li>
+            <li><a href="/grids">Grid system</a></li>
+          </ul>
+          </li>
+          <li>Design Components
+          <ul>
+            <li><a href="/header">Header</a></li>
+            <li><a href="/footer">Footer</a></li>
+            <li><a href="/breadcrumbs">Breadcrumbs</a></li>
+            <li><a href="/cards">Cards</a></li>
+            </ul>
+          </li>
       </nav>
     `;
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <title>Design System</title>
+</head>
+
+<body>
+  <mc-header></mc-header>
+  <mc-breadcrumbs>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Footer</a></li>
+    </ul>
+  </mc-breadcrumbs>
+
+  <mc-container padding="inline">
+
+    <mc-container size="small" alignment="start">
+      <h1>Footer</h1>
+      <p>The footer component is available to be used on all pages of our sites/apps.</p>
+      <p>It is made up of itself, an embedded <code>&lt;mc-logo&gt;</code> and an embedded
+        <code>&lt;mc-main-nav&gt;</code> web component.
+      </p>
+    </mc-container>
+
+    <mc-container size="large" class="mc-ds-container-demo">
+      <mc-footer></mc-footer>
+    </mc-container>
+
+  </mc-container>
+
+  <mc-footer></mc-footer>
+  <script type="module" src="../script.js"></script>
+</body>
+
+</html>
