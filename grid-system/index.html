@@ -36,18 +36,23 @@
   <mc-container padding="inline" class="mc-ds-grid-container">
     <h2></h2>
     <p>This is a very simple grid system, based on a 12-column grid.</p>
-    <p>Each grid instance needs two items:</p>
+    <p>It hastwo custom elements available:</p>
     <ol>
       <li>A <code>&lt;mc-grid&gt;</code> element</li>
-      <li>One or more <code>&lt;mc-grid-item&gt;</code> elements</li>
+      <li>A<code>&lt;mc-grid-item&gt;</code> element</li>
     </ol>
-    <p>The grid container only accepts one attribute, <code>gap</code>. This can be set to <code>small</code>,
+    <p>The grid container accepts two attributes, <code>gap</code> and <code>size</code>. Gap can be set to
+      <code>small</code>,
       <code>medium</code>, <code>large</code>, or <code>none</code>. If this attribute is left out, it will default to
-      <code>medium</code>, which equates to <code>--mc-spacing</code>.
+      <code>medium</code>, which equates to <code>--mc-spacing</code>. Size can be set to <code>quarters</code>,
+      <code>thirds</code>, or <code>halves</code>. This makes it very handy for a lot of use cases, however if you want
+      different widths per item, you can use the <code>&lt;mc-grid-item&gt;</code> custom element and set the size
+      you want on that element.
     </p>
     <p>The grid items accept one attribute, <code>size</code>. This can be set to <code>one-quarter</code>,
       <code>one-third</code>, <code>one-half</code>, <code>two-thirds</code>, or <code>three-quarters</code>. If this
       attribute is left out, it will default to <code>one-third</code>.
+    </p>
 
   </mc-container>
 
@@ -129,42 +134,54 @@
 
   <mc-container padding="inline" class="mc-ds-grid-container">
     <h2 id="quarters">Grid: All rows spanning 25% on large screens</h2>
+    <p><code>&lt;mc-grid size="quarters"&gt;</code></p>
     <mc-grid size="quarters">
-      <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
     </mc-grid>
   </mc-container>
 
   <mc-container padding="inline" class="mc-ds-grid-container">
     <h2 id="thirds">Grid: All rows spanning 33% on large screens</h2>
+    <p><code>&lt;mc-grid size="thirds"&gt;</code></p>
     <mc-grid size="thirds">
-      <mc-grid-item size="one-third"><code>&lt;mc-grid-item size="one-third"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-third"><code>&lt;mc-grid-item size="one-third"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-third"><code>&lt;mc-grid-item size="one-third"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-third"><code>&lt;mc-grid-item size="one-third"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-third"><code>&lt;mc-grid-item size="one-third"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-third"><code>&lt;mc-grid-item size="one-third"&gt;</code></mc-grid-item>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
     </mc-grid>
   </mc-container>
 
   <mc-container padding="inline" class="mc-ds-grid-container">
     <h2 id="halves">Grid: All rows spanning 50% on large screens</h2>
+    <p><code>&lt;mc-grid size="halves"&gt;</code></p>
     <mc-grid size="halves">
-      <mc-grid-item size="one-half"><code>&lt;mc-grid-item size="one-half"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-half"><code>&lt;mc-grid-item size="one-half"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-half"><code>&lt;mc-grid-item size="one-half"&gt;</code></mc-grid-item>
-      <mc-grid-item size="one-half"><code>&lt;mc-grid-item size="one-half"&gt;</code></mc-grid-item>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
+      <div class="mc-ds-grid-item"></div>
     </mc-grid>
   </mc-container>
 
   <mc-container padding="inline" class="mc-ds-grid-container">
     <h2 id="variable">Grid: Variable rows on large screens</h2>
+    <pre>
+      <code>
+        &lt;mc-grid&gt;
+          &lt;mc-grid-item size="one-half"&gt;
+          &lt;mc-grid-item size="one-quarter"&gt;
+          &lt;mc-grid-item size="one-quarter"&gt;
+        &lt;/mc-grid&gt;
+      </code>
+    </pre>
     <mc-grid>
       <mc-grid-item size="one-half"><code>&lt;mc-grid-item size="one-half"&gt;</code></mc-grid-item>
       <mc-grid-item size="one-quarter"><code>&lt;mc-grid-item size="one-quarter"&gt;</code></mc-grid-item>

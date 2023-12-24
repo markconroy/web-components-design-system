@@ -63,7 +63,7 @@ export class MainNav extends HTMLElement {
             <li><a href="/colors">Colors</a></li>
             <li><a href="/typography">Typography</a></li>
             <li><a href="/containers">Containers</a></li>
-            <li><a href="/grids">Grid system</a></li>
+            <li><a href="/grid-system">Grid system</a></li>
           </ul>
           </li>
           <li>Design Components

@@ -25,6 +25,24 @@ export class Grid extends HTMLElement {
         :host([gap="large"]) {
           gap: var(--mc-grid-gap-large);
         }
+        :host([size]){
+          --mc-grid-columns: 1;
+        }
+        @media screen and (min-width: 48em) {
+          :host([size="halves"]),
+          :host([size="thirds"]),
+          :host([size="quarters"]) {
+            --mc-grid-columns: 2;
+          }
+        }
+        @media screen and (min-width: 60em) {
+          :host([size="thirds"]) {
+            --mc-grid-columns: 3;
+          }
+          :host([size="quarters"]) {
+            --mc-grid-columns: 4;
+          }
+        }
       </style>
       <slot></slot>
     `;

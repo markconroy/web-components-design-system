@@ -34,7 +34,8 @@
   margin-block-start: var(--mc-spacing-largest);
 }
 
-.mc-ds-grid-container mc-grid-item {
+.mc-ds-grid-container mc-grid-item,
+.mc-ds-grid-container .mc-ds-grid-item {
   height: 100px;
   border: var(--mc-border);
   background-color: var(--mc-color-grey-lightest);
