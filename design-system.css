@@ -18,9 +18,6 @@
 
 .mc-ds-container-demo {
   border: var(--mc-border);
-}
-
-.mc-ds-container-demo {
   margin-block-start: var(--mc-spacing-largest);
 }
 
@@ -30,7 +27,8 @@
   padding-bottom: var(--mc-spacing);
 }
 
-.mc-ds-grid-container + .mc-ds-grid-container {
+.mc-ds-grid-container + .mc-ds-grid-container,
+.mc-ds-card-container + .mc-ds-card-container {
   margin-block-start: var(--mc-spacing-largest);
 }
 
@@ -39,4 +37,8 @@
   height: 100px;
   border: var(--mc-border);
   background-color: var(--mc-color-grey-lightest);
+}
+
+.mc-ds-card-container {
+  max-width: 600px;
 }

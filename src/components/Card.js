@@ -1,58 +1,91 @@
-import { Button } from './Button.js';
-import { Heading } from './Heading.js';
-
 export class Card extends HTMLElement {
   // create a static method called define
   static {
     // define the web component
-    customElements.define('component-card', this);
+    customElements.define("mc-card", this);
   }
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
-    this.classList.add('component-card');
-    this.setAttribute('role', 'article');
-    this.setAttribute('aria-label', this.querySelector('[slot="title"]').textContent);
+    this.attachShadow({ mode: "open" });
+    this.classList.add("mc-card");
+    this.setAttribute("role", "article");
+    this.setAttribute(
+      "aria-label",
+      this.getAttribute("card-title")
+    );
     this.shadowRoot.innerHTML = `
       <style>
         :host {
+          @import url('../style.css');
           display: block;
-          background: var(--color-background);
-          border-radius: 4px;
+          border-radius: var(--border-radius);
           box-shadow: 0 0 4px rgba(0,0,0,0.2);
           overflow: hidden;
         }
-        :host([data-scheme="image-left"]) {
-          background: var(--color-background-dark);
+        h2 {
+          margin-top: 0;
+          line-height: var(--mc-line-height-small);
+          font-family: var(--mc-font-secondary);
         }
-        :host(:not([data-image-position="top"])) > article {
-          display: flex;
-        }
-        .component-card__content {
+        .mc-card__content {
           padding: 1rem;
         }
+        .mc-card__link a {
+          display: inline-block;
+          padding: var(--mc-spacing-small) var(--mc-spacing);
+          background-color: var(--mc-color-primary);
+          color: var(--mc-color-white);
+          transition: var(--mc-transition-time);
+        }
+        .mc-card__link a:focus,
+        .mc-card__link a:hover {
+          outline: var(--mc-border);
+          outline-offset: var(--mc-border-width);
+          text-decoration: none;
+          background-color: var(--mc-color-secondary);
+        }
+        .mc-card__image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        @media screen and (min-width: 768px) {
+          :host([image-position="left"]),
+        :host([image-position="right"]) {
+          display: grid;
+        }
+        :host([image-position="left"]) {
+          grid-template-columns: 1fr 2fr;
+        }
+        :host([image-position="right"]) {
+          grid-template-columns: 2fr 1fr;
+        }
+      }
       </style>
 
-      ${this.getAttribute('data-image-position') !== 'right' ?
-        `<div class="component-card__image">
-          <slot name="image"></slot>
-        </div>`
-      : ''}
+      ${this.getAttribute("image-position") === "top" ||
+        this.getAttribute("image-position") === "left"
+          ? `<div class="mc-card__image">
+              <img src="${this.getAttribute("image-src")}" alt="${this.getAttribute("image-alt")}">
+            </div>`
+          : ""
+      }
 
-      <div class="component-card__content">
-        <component-heading data-type="type-2" data-heading-level="2">
-          <slot name="title"></slot>
-        </component-heading>
-        <slot name="content"></slot>
-        <component-button data-size="small">Read More</component-button>
+      <div class="mc-card__content">
+        <h2>${this.getAttribute("card-title")}</h2>
+        <slot name="mc-card-content"></slot>
+        <div class="mc-card__link">
+          <a href="${this.getAttribute("card-link")}">Read More</a>
+        </div>
       </div>
 
-      ${this.getAttribute('data-image-position') === 'right' ?
-        `<div class="component-card__image">
-          <slot name="image"></slot>
-        </div>`
-      : ''}
-
+      ${this.getAttribute("image-position") === "right"
+        ? `<div class="mc-card__image">
+            <img src="${this.getAttribute("image-src")}" alt="${this.getAttribute("image-alt")}">
+          </div>`
+        : ""
+      }
     `;
   }
 }

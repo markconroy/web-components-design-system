@@ -53,6 +53,12 @@ h1,
   font-size: var(--mc-font-size-responsive-heading-largest);
 }
 
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
 input,
 textarea,
 select,
