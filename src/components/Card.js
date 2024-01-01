@@ -13,6 +13,12 @@ export class Card extends HTMLElement {
       "aria-label",
       this.getAttribute("card-title")
     );
+    let headingLevel;
+    if (this.hasAttribute("heading-level")) {
+      headingLevel = this.getAttribute("heading-level");
+    } else {
+      headingLevel = "h2";
+    }
     this.shadowRoot.innerHTML = `
       <style>
         :host {
@@ -22,10 +28,11 @@ export class Card extends HTMLElement {
           box-shadow: 0 0 4px rgba(0,0,0,0.2);
           overflow: hidden;
         }
-        h2 {
+        .mc-card__title {
           margin-top: 0;
           line-height: var(--mc-line-height-small);
           font-family: var(--mc-font-secondary);
+          font-size: var(--mc-font-size-large);
         }
         .mc-card__content {
           padding: 1rem;
@@ -73,7 +80,9 @@ export class Card extends HTMLElement {
       }
 
       <div class="mc-card__content">
-        <h2>${this.getAttribute("card-title")}</h2>
+        <${headingLevel} class="mc-card__title">
+          ${this.getAttribute("card-title")}
+        </${headingLevel}>
         <slot name="mc-card-content"></slot>
         <div class="mc-card__link">
           <a href="${this.getAttribute("card-link")}">Read More</a>
