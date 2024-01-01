@@ -23,10 +23,24 @@
     <mc-container size="small" alignment="start">
       <h1>Cards</h1>
       <h2>Table of Contents</h2>
-      <p>Cards ... coming soon!</p>
+      <ul>
+        <li><a href="#top">A card with the image at the top</a></li>
+        <li><a href="#left">A Card with the image positioned left</a></li>
+        <li><a href="#right">A Card with the image positioned right</a></li>
+      </ul>
+
+      <p>Cards are used to display previews of content in a consistent way. Each card can have props for title, teaser
+        text, image, and a link.</p>
+        <ul>
+          <li><code>card-title</code> - The title of the card</li>
+          <li><code>card-link</code> - The link for the card</li>
+          <li><code>image-position</code> - The position of the image (top, left, right)</li>
+          <li><code>image-src</code> - The source of the image</li>
+          <li><code>image-alt</code> - The alt text for the image</li>
+        </ul>
     </mc-container>
 
-    <mc-container size="small" class="mc-ds-card-container">
+    <mc-container id="top" size="small" class="mc-ds-card-container">
       <mc-card card-title="A card with the image at the top" card-link="#" image-position="top"
         image-src="https://picsum.photos/id/123/600/400" image-alt="An Image">
         <img slot="image" src="https://picsum.photos/seed/picsum/600/400" alt="A random image">
@@ -36,7 +50,7 @@
         </div>
       </mc-card>
     </mc-container>
-    <mc-container size="small" class="mc-ds-card-container">
+    <mc-container id="left" size="small" class="mc-ds-card-container">
       <mc-card card-title="A Card with the image positioned left" card-link="#" image-position="left"
         image-src="https://picsum.photos/id/234/600/400" image-alt="An Image">
 
@@ -47,7 +61,7 @@
         </div>
       </mc-card>
     </mc-container>
-    <mc-container size="small" class="mc-ds-card-container">
+    <mc-container id="right" size="small" class="mc-ds-card-container">
       <mc-card card-title="A Card with the image positioned right" card-link="#" image-position="right"
         image-src="https://picsum.photos/id/345/600/400" image-alt="Mark's Image">
         <h2 slot="mc-card-title" class="mc-heading">A Card with the image positioned right</h2>
