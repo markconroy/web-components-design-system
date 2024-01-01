@@ -42,7 +42,7 @@
       centre of the screen if the screen is wider than its max-width.
     </p>
     <p>
-      It accepts props for <code>padding</code>, <code>size</code> and <code>alignment</code>, with the following
+      It accepts props for <code>padding</code>, <code>size</code>, <code>gap</code> and <code>alignment</code>, with the following
       allowed values:
     </p>
     <ul>
@@ -62,6 +62,14 @@
           <li><code>100</code> - max-width is set to <code>100%</code></li>
         </ul>
       </li>
+      <li>Gap:
+        <ul>
+          <li><code>small</code> - gap is set to <code>--mc-spacing-small</code></li>
+          <li><code>medium</code> - gap is set to <code>--mc-spacing-medium</code></li>
+          <li><code>large</code> - gap is set to <code>--mc-spacing-large</code></li>
+          <li><code>larger</code> - gap is set to <code>--mc-spacing-larger</code></li>
+          <li><code>largest</code> - gap is set to <code>--mc-spacing-largest</code></li>
+        </ul>
       <li>Alignment:
         <ul>
           <li><code>start</code> - aligns the container to the inline-block-start</li>
@@ -69,6 +77,7 @@
         </ul>
       </li>
     </ul>
+    <p>If you use the <code>gap</code> property, the container sets <code>display: flex</code> on itself with a one column grid, then each item placed in it will have the specified gap between itself and the next item. This is handy if you wanted to place <a href="/sample-page#latest-events">two cards on top of each other</a> but not have them touching off each other.</p>
   </mc-container>
 
   <mc-container id="default" padding="inline" class="mc-ds-container-demo">

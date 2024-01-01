@@ -20,6 +20,11 @@ export class Footer extends HTMLElement {
         .mc-footer__nav {
           margin-block-start: var(--mc-spacing-largest);
         }
+        .mc-footer__menu {
+          border-block-start: var(--mc-border);
+          padding-block-start: var(--mc-spacing-large);
+          border-color: var(--mc-color-white);
+        }
         .mc-footer__menu ul {
           list-style: none;
           margin: 0;
@@ -58,21 +63,16 @@ export class Footer extends HTMLElement {
             </div>
 
             <nav class="mc-footer__nav">
-              <mc-grid>
-
-                <mc-grid-item size="one-quarter">
+              <mc-grid gap="large" size="quarters">
                   <div class="mc-footer__menu">
                     <ul>
-                      <li><a href="#">Home</a></li>
+                      <li><a href="/">Home</a></li>
                       <li><a href="#">About Us</a></li>
                       <li><a href="#">Our Work</a></li>
                       <li><a href="#">Our Services</a></li>
                       <li><a href="#">Contact Us</a></li>
                     </ul>
-                  </div>
-                </mc-grid-item>
-
-                <mc-grid-item size="one-quarter">
+                    </div>
                   <div class="mc-footer__menu">
                     <ul>
                       <li><a href="#">Products</a></li>
@@ -80,31 +80,23 @@ export class Footer extends HTMLElement {
                       <li><a href="#">FAQs</a></li>
                       <li><a href="#">Returns</a></li>
                     </ul>
-                  </div>
-                </mc-grid-item>
-
-                <mc-grid-item size="one-quarter">
+                    </div>
                   <div class="mc-footer__menu">
                     <ul>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">News</a></li>
-                      <li><a href="#">Events</a></li>
+                      <li><a href="https://mark.ie/">Blog</a></li>
+                      <li><a href="https://mark.ie/">News</a></li>
+                      <li><a href="https://mark.ie/">Events</a></li>
                     </ul>
-                  </div>
-                </mc-grid-item>
-
-                <mc-grid-item size="one-quarter">
+                    </div>
                   <div class="mc-footer__menu">
                     <ul>
-                      <li><a href="#">GitHub</a></li>
-                      <li><a href="#">Twitter</a></li>
-                      <li><a href="#">LinkedIn</a></li>
-                      <li><a href="#">Instagram</a></li>
-                      <li><a href="#">TikTok</a></li>
-                      <li><a href="#">YouTube</a></li>
+                      <li><a href="https://github.com/markconroy/">GitHub</a></li>
+                      <li><a href="https://twitter.com/markconroy/">Twitter</a></li>
+                      <li><a href="https://www.linkedin.com/in/conroymark/">LinkedIn</a></li>
+                      <li><a href="https://www.instagram.com/markyconroy/">Instagram</a></li>
+                      <li><a href="https://www.youtube.com/@markyconroy">YouTube</a></li>
                     </ul>
-                  </div>
-                </mc-grid-item>
+                    </div>
 
               </mc-grid>
             </nav>

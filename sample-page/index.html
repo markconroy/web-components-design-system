@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <title>Design System</title>
+</head>
+
+<body>
+  <mc-header></mc-header>
+  <mc-breadcrumbs>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/cards">Cards</a></li>
+      <li><a href="#">Sample Page</a></li>
+    </ul>
+  </mc-breadcrumbs>
+
+  <mc-container padding="inline">
+
+    <mc-container size="small" alignment="start">
+      <h1>A Sample Page</h1>
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#latest-news">Latest News</a></li>
+        <li><a href="#some-text-1">Some text about something</a></li>
+        <li><a href="#latest-events">Latest Events</a></li>
+        <li><a href="#some-text-2">Some more text about something</a></li>
+      </ul>
+
+      <p>This is a sample page, but together using the parts of our design system.</p>
+
+      <h2 id="latest-news">Latest News</h2>
+    </mc-container>
+
+    <mc-grid size="thirds">
+      <mc-card card-title="We built a design system" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/123/600/400" image-alt="A random Image">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+
+      <mc-card card-title="This design system uses only HTML, CSS, and JavaScript" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/123/600/400" image-alt="A random Image">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+
+      <mc-card card-title="A vanilla JS design system with no build tools" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/123/600/400" image-alt="A random Image">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+    </mc-grid>
+
+    <mc-container size="small" alignment="start">
+      <h2 id="some-text-1">Some text about something</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi accusamus labore non illum adipisci earum iure
+        recusandae. Dolorem facere corporis inventore dignissimos repellendus. Culpa aperiam incidunt ullam ad cum.
+        Rerum.</p>
+    </mc-container>
+
+    <h2 id="latest-events">Latest Events</h2>
+    <mc-container size="small" alignment="start" gap="largest">
+      <mc-card card-title="Upcoming course: web components design system" card-link="#" image-position="left"
+        image-src="https://picsum.photos/id/234/600/400" image-alt="A random Image">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+      <mc-card card-title="Webinar: Do you need Storybook to build a design system?" card-link="#" image-position="left"
+        image-src="https://picsum.photos/id/234/600/400" image-alt="A random Image">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+    </mc-container>
+
+    <mc-container size="small" alignment="start">
+      <h2 id="some-text-2">Some more text about something</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi accusamus labore non illum adipisci earum iure
+        recusandae. Dolorem facere corporis inventore dignissimos repellendus. Culpa aperiam incidunt ullam ad cum.
+        Rerum.</p>
+    </mc-container>
+
+  </mc-container>
+
+  <mc-footer></mc-footer>
+  <script type="module" src="../script.js"></script>
+</body>
+
+</html>

@@ -46,6 +46,25 @@ export class Container extends HTMLElement {
         :host([padding="all"]) {
           padding: var(--mc-spacing);
         }
+        :host([gap]) {
+          display: grid;
+          grid-template-columns: 1;
+        }
+        :host([gap="small"]) {
+          gap: var(--mc-spacing-small);
+        }
+        :host([gap="medium"]) {
+          gap: var(--mc-spacing);
+        }
+        :host([gap="large"]) {
+          gap: var(--mc-spacing-large);
+        }
+        :host([gap="larger"]) {
+          gap: var(--mc-spacing-larger);
+        }
+        :host([gap="largest"]) {
+          gap: var(--mc-spacing-largest);
+        }
       </style>
       <slot></slot>
     `;

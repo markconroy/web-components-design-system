@@ -74,6 +74,11 @@ export class MainNav extends HTMLElement {
             <li><a href="/cards">Cards</a></li>
             </ul>
           </li>
+          <li>Pages
+          <ul>
+            <li><a href="/sample-page">Sample Page</a></li>
+            </ul>
+          </li>
       </nav>
     `;
 
