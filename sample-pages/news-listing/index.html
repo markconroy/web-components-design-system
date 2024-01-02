@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css" type="text/css">
+  <title>Design System</title>
+</head>
+
+<body>
+  <mc-header></mc-header>
+  <mc-breadcrumbs>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/cards">Cards</a></li>
+      <li><a href="#">Sample Pages</a></li>
+      <li><a href="#">News and Events</a></li>
+    </ul>
+  </mc-breadcrumbs>
+
+  <mc-container padding="inline">
+
+
+    <mc-container size="small" alignment="start">
+      <h1>News and Events</h1>
+      <p>This is a sample page, put together using the parts of our design system.</p>
+    </mc-container>
+
+    <mc-grid size="halves">
+      <div>
+        <h2>News</h2>
+        <ul>
+          <li><a href="#featured-news">Featured News</a></li>
+          <li><a href="#some-text-1">Product News</a></li>
+        </ul>
+        <h2>Events</h2>
+        <ul>
+          <li><a href="#featured-events">Featured Events</a></li>
+          <li><a href="#upcoming-events">Upcoming Events</a></li>
+        </ul>
+      </div>
+      <mc-card card-title="No framework design system launched" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/111/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+    </mc-grid>
+
+    <h2 id="featured-news">Featured News</h2>
+    <mc-container size="small" alignment="start" gap="largest">
+      <mc-card card-title="This is a design system built by Mark Conroy" card-link="#" image-position="left"
+        image-src="https://picsum.photos/id/222/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+      <mc-card card-title="2024, the year of 'no build' systems" card-link="#" image-position="left"
+        image-src="https://picsum.photos/id/333/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+    </mc-container>
+
+    <h2 id="product-news">Product News</h2>
+    <mc-grid size="thirds">
+      <mc-card card-title="We built a design system" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/444/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+
+      <mc-card card-title="This design system uses only HTML, CSS, and JavaScript" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/555/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+
+      <mc-card card-title="A vanilla JS design system with no build tools" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/666/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+    </mc-grid>
+
+    <h2 id="featured-events">Featured Events</h2>
+    <mc-container size="small" alignment="start" gap="largest">
+      <mc-card card-title="Upcoming course: web components design system" card-link="#" image-position="left"
+        image-src="https://picsum.photos/id/777/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+      <mc-card card-title="Webinar: Do you need Storybook to build a design system?" card-link="#" image-position="left"
+        image-src="https://picsum.photos/id/888/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+    </mc-container>
+
+    <h2 id="upcoming-events">Upcoming Events</h2>
+    <mc-grid size="thirds">
+      <mc-card card-title="We built a design system" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/999/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+
+      <mc-card card-title="This design system uses only HTML, CSS, and JavaScript" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/1001/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+
+      <mc-card card-title="A vanilla JS design system with no build tools" card-link="#" image-position="top"
+        image-src="https://picsum.photos/id/1002/600/400" image-alt="A random Image" heading-level="h3">
+        <div slot="mc-card-content">
+          <p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+      </mc-card>
+    </mc-grid>
+
+
+  </mc-container>
+
+  <mc-footer></mc-footer>
+  <script type="module" src="../../script.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ export class MainNav extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         @import url('../style.css');
-
+        @import url('../../style.css');
       </style>
       <button id="mc-main-nav-button" class="mc-main-nav-button">Menu</button>
     `;
@@ -74,9 +74,10 @@ export class MainNav extends HTMLElement {
             <li><a href="/cards">Cards</a></li>
             </ul>
           </li>
-          <li>Pages
+          <li>Sample Pages
           <ul>
-            <li><a href="/sample-page">Sample Page</a></li>
+            <li><a href="/sample-pages/news-listing">News & Events</a></li>
+            <li><a href="/sample-pages/gallery">Gallery Page</a></li>
             </ul>
           </li>
       </nav>
