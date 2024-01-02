@@ -76,6 +76,7 @@ export class MainNav extends HTMLElement {
           </li>
           <li>Sample Pages
           <ul>
+            <li><a href="/sample-pages/content-page">Content Page</a></li>
             <li><a href="/sample-pages/news-listing">News & Events</a></li>
             <li><a href="/sample-pages/gallery">Gallery Page</a></li>
             </ul>

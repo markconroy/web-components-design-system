@@ -100,3 +100,25 @@ pre code {
   --mc-code-background-color: transparent;
 }
 
+blockquote {
+  padding: var(--mc-spacing-small) var(--mc-spacing);
+  border-left: var(--mc-border);
+  font-style: italic;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: var(--mc-spacing);
+  border: var(--mc-border);
+  text-align: left;
+  th,
+  td {
+    padding: var(--mc-spacing-smallest) var(--mc-spacing);
+    border-bottom: var(--mc-border);
+  }
+  th {
+    background-color: var(--mc-color-secondary);
+    color: var(--mc-color-white);
+  }
+}
+
