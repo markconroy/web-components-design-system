@@ -79,6 +79,17 @@ export class MainNav extends HTMLElement {
               <li><a href="/sample-pages/gallery">Gallery Page</a></li>
             </ul>
           </li>
+          <li>Meta Links
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="https://mark.ie" target="_blank">Mark.ie</a></li>
+              <li><a href="https://github.com/markconroy" target="_blank">Mark on GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/conroymark/" target="_blank">Mark on LinkedIn</a></li>
+              <li><a href="https://www.youtube.com/@markyconroy" target="_blank">Mark on YouTube</a></li>
+              <li><a href="https://github.com/markconroy" target="_blank">Mark on GitHub</a></li>
+              <li><a href="https://twitter.com/markconroy" target="_blank">Mark on Twitter</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     `;
