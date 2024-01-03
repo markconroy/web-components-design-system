@@ -15,6 +15,10 @@ body {
 a {
   color: var(--mc-color-primary);
   transition: var(--mc-transition-time);
+  &:hover {
+    text-decoration: none;
+    color: var(--mc-color-secondary);
+  }
   &:focus-visible {
     outline: var(--mc-border);
     outline-offset: var(--mc-border-width);

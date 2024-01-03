@@ -5,11 +5,9 @@ export class MainNav extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
+
     this.shadowRoot.innerHTML = `
-      <style>
-        @import url('../style.css');
-        @import url('../../style.css');
-      </style>
+      <link rel="stylesheet" href="/style.css">
       <button id="mc-main-nav-button" class="mc-main-nav-button">Menu</button>
     `;
 
@@ -23,8 +21,8 @@ export class MainNav extends HTMLElement {
       menuDialog = document.querySelector('#mc-main-nav-dialog');
     }
     menuDialog.innerHTML = `
-    <style>
-        @import url('../style.css');
+      <link rel="stylesheet" href="/style.css">
+      <style>
         .mc-main-nav-dialog,
         .mc-main-nav-dialog[open].mc-main-nav-dialog--closing {
           position: fixed;
@@ -75,12 +73,13 @@ export class MainNav extends HTMLElement {
             </ul>
           </li>
           <li>Sample Pages
-          <ul>
-            <li><a href="/sample-pages/content-page">Content Page</a></li>
-            <li><a href="/sample-pages/news-listing">News & Events</a></li>
-            <li><a href="/sample-pages/gallery">Gallery Page</a></li>
+            <ul>
+              <li><a href="/sample-pages/content-page">Content Page</a></li>
+              <li><a href="/sample-pages/listing-page">Listing Page</a></li>
+              <li><a href="/sample-pages/gallery">Gallery Page</a></li>
             </ul>
           </li>
+        </ul>
       </nav>
     `;
 

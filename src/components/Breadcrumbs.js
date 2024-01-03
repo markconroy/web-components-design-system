@@ -1,15 +1,15 @@
-import { Container } from './Container.js';
+import { Container } from "./Container.js";
 
 export class Breadcrumbs extends HTMLElement {
   static {
-    customElements.define('mc-breadcrumbs', this);
+    customElements.define("mc-breadcrumbs", this);
   }
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/style.css">
       <style>
-        @import url('../style.css');
         :host {
           background-color: var(--mc-color-primary);
         }

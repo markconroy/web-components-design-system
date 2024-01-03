@@ -20,9 +20,9 @@ export class Card extends HTMLElement {
       headingLevel = "h2";
     }
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/style.css">
       <style>
         :host {
-          @import url('../style.css');
           display: block;
           border-radius: var(--border-radius);
           box-shadow: 0 0 4px rgba(0,0,0,0.2);

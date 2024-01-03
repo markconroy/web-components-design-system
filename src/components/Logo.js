@@ -5,9 +5,10 @@ export class Logo extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
+
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/style.css">
       <style>
-        @import url('../style.css');
         .mc-logo a {
           display: inline-flex;
           flex-direction: column;
@@ -20,6 +21,7 @@ export class Logo extends HTMLElement {
           color: var(--mc-color-white);
           font-family: var(--mc-font-secondary);
           text-decoration: none;
+
         }
         .mc-logo a:hover {
           background-color: var(--mc-color-primary);

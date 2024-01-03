@@ -10,8 +10,8 @@ export class Footer extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/style.css">
       <style>
-        @import url('../style.css');
         .mc-footer {
           margin-block-start: var(--mc-spacing-largest);
           background: var(--mc-color-primary);

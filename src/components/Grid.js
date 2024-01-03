@@ -6,8 +6,8 @@ export class Grid extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/style.css">
       <style>
-        @import url('../style.css');
         :host {
           display: grid;
           gap: var(--mc-grid-gap);

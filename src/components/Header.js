@@ -10,8 +10,8 @@ export class Header extends HTMLElement {
     super();
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/style.css">
       <style>
-      @import url('../style.css');
       .mc-header {
         padding-block: var(--mc-spacing-largest);
       }
