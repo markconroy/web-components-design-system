@@ -1,8 +1,8 @@
 :root {
 
   /* Brand Colours */
-  --mc-color-primary: hsl(220, 70%, 60%);
-  --mc-color-secondary: hsl(23, 90%, 55%);
+  --mc-color-primary: hsl(220, 70%, 50%);
+  --mc-color-secondary: hsl(25, 85%, 50%);
   /* Grey Scale */
   --mc-color-white: #fff;
   --mc-color-grey-lightest: hsl(0, 0%, 95%);
